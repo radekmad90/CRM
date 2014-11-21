@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CRM</string>
+    <string name="menu_glowna">Strona główna</string>
+    <string name="menu_spotkania">Spotkania</string>
+    <string name="menu_klienci">Klienci</string>
+    <string name="menu_kalendarz">Kalendarz</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hint">Example action</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nav_drawer_items">
+        <item>Główna</item>
+        <item>Spotkania</item>
+        <item>Klienci</item>
+        <!--<item>R.string.menu_kalendarz</item>-->
+    </string-array>
+
+</resources>
