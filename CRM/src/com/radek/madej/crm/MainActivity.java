@@ -1,5 +1,6 @@
 package com.radek.madej.crm;
 
+import android.app.Application;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import com.radek.madej.crm.fragments.BaseDrawerFragment;
 import com.radek.madej.crm.fragments.ClientsFragment;
 import com.radek.madej.crm.fragments.CrmFragment;
+import com.radek.madej.crm.fragments.MapFragment;
 import com.radek.madej.crm.fragments.MeetingsFragment;
 
 
@@ -22,14 +24,12 @@ public class MainActivity extends ActionBarActivity
 
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private BaseDrawerFragment fragment;
-    /**
-     * Used to store the last screen title. For use in {@link #restoreActionBar()}.
-     */
     private CharSequence mTitle;
-
+    private Application app;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        app = (CRMApp) getApplication();
         setContentView(R.layout.activity_main);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
@@ -53,9 +53,9 @@ public class MainActivity extends ActionBarActivity
 		case 2:
 			fragment = new ClientsFragment(position);
 			break;
-//		case 3:
-//			//Kalendarz
-//			break;
+		case 3:
+			fragment = new MapFragment(position);
+			break;
 		default:
 			Toast toast = Toast.makeText(getApplicationContext(), "onNavigationDrawerItemSelected Default switch", Toast.LENGTH_LONG);
 			toast.show();

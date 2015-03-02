@@ -105,7 +105,7 @@
         </rule>
         <rule>
             <name>AssignmentInOperand</name>
-            <ruleset>Basic Ecmascript</ruleset>
+            <ruleset>Controversial</ruleset>
         </rule>
         <rule>
             <name>AvoidTrailingComma</name>
@@ -185,7 +185,7 @@
         </rule>
         <rule>
             <name>CollapsibleIfStatements</name>
-            <ruleset>Basic Velocity</ruleset>
+            <ruleset>Basic</ruleset>
         </rule>
         <rule>
             <name>EmptyForeachStmt</name>
@@ -193,7 +193,7 @@
         </rule>
         <rule>
             <name>EmptyIfStmt</name>
-            <ruleset>Basic Velocity</ruleset>
+            <ruleset>Empty Code</ruleset>
         </rule>
         <rule>
             <name>ExcessiveTemplateLength</name>
