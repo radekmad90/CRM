@@ -3,7 +3,7 @@
 
     <string-array name="nav_drawer_items">
         <item>Główna</item>
-        <item>Dodaj klienta</item>
+        <item>@string/title_activity_add_customer</item>
         <!--<item>R.string.menu_kalendarz</item>-->
     </string-array>
 

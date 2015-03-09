@@ -8,15 +8,15 @@
     <string name="menu_kalendarz">Kalendarz</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="hint">Example action</string>
-    <string name="action_settings">Settings</string>
-    <string name="customer_add">Dodaj nowego klienta</string>
-    <string name="company_name">Nazwa firmy</string>
-    <string name="company_city">Miasto</string>
-    <string name="company_street">Ulica</string>
-    <string name="company_number">Numer</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="customer_name">Nazwa firmy</string>
+    <string name="address">Adres</string>
+    <string name="geocode">Geokoduj</string>
+    <string name="title_activity_add_customer">Nowy klient</string>
+    <string name="title_activity_geocoded_list">Geokodowanie</string>
+    <string name="choose_address">Wybierz prawidłowy adres</string>
+    <string name="employee">Pracownik</string>
+    <string name="phone">Numer telefonu</string>
     <string name="add_customer">Dodaj klienta</string>
-    <string name="title_activity_add_customer">AddCustomerActivity</string>
-    <string name="hello_world">Hello world!</string>
-
+ 
 </resources>

@@ -7,18 +7,19 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.radek.madej.crm.activities.AddCustomerActivity;
 import com.radek.madej.crm.fragments.BaseDrawerFragment;
 import com.radek.madej.crm.fragments.CrmFragment;
 
 public class MainActivity extends ActionBarActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
-	private NavigationDrawerFragment mNavigationDrawerFragment;
-	private BaseDrawerFragment fragment;
-	private CharSequence mTitle;
+	private transient NavigationDrawerFragment mNavigationDrawerFragment;
+	private transient CharSequence mTitle;
 	private CRMApp CRMApp;
 
 	@Override
@@ -34,6 +35,7 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
 	@Override
 	public void onNavigationDrawerItemSelected(int position) {
 		Intent intent = null;
+		BaseDrawerFragment fragment = null;
 		switch (position) {
 		case 0:
 			fragment = new CrmFragment(position);
@@ -48,7 +50,6 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
 			break;
 		}
 
-		
 	}
 
 	public void onSectionAttached(int number) {
