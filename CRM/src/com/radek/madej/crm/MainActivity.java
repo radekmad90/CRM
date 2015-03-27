@@ -27,6 +27,10 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
 		super.onCreate(savedInstanceState);
 		CRMApp = (CRMApp) getApplication();
 		setContentView(R.layout.activity_main);
+		CrmFragment fragment = new CrmFragment(0);
+		getSupportFragmentManager().beginTransaction()
+        .add(R.id.container, fragment).commit();
+		
 		mNavigationDrawerFragment = (NavigationDrawerFragment) getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
 		mTitle = getTitle();
 		mNavigationDrawerFragment.setUp(R.id.navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout));
@@ -35,10 +39,11 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
 	@Override
 	public void onNavigationDrawerItemSelected(int position) {
 		Intent intent = null;
-		BaseDrawerFragment fragment = null;
 		switch (position) {
 		case 0:
-			fragment = new CrmFragment(position);
+			BaseDrawerFragment fragment = new CrmFragment(position);
+			getSupportFragmentManager().beginTransaction()
+	        .add(R.id.container, fragment).commit();
 			break;
 		case 1:
 			intent = new Intent(this, AddCustomerActivity.class);

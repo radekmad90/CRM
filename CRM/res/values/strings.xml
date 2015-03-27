@@ -18,5 +18,7 @@
     <string name="employee">Pracownik</string>
     <string name="phone">Numer telefonu</string>
     <string name="add_customer">Dodaj klienta</string>
+    <string name="no_data">Brak danych</string>
+    <string name="customer_added_toast">Klient został poprawnie dodany</string>
  
 </resources>
